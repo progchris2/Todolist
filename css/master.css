@@ -87,12 +87,13 @@ img {
   vertical-align: middle;
 }
 
+
 .hide{
   display: none;
 }
 .show {
   position: absolute;
-  z-index: 999;
+  z-index: 900;
   top: 64px;
   left: 20%;
   width: 40%;
@@ -133,4 +134,13 @@ input{
  }
 .btn-form:hover {
     background-color: rgb(26, 21, 45);
+}
+
+#close {
+ position: absolute;
+ left: 144%;
+ top: 4px;
+}
+.close {
+  cursor: pointer;
 }

@@ -22,7 +22,7 @@
     <div id="popup" class="hide">
 
       <form action="">
-        <div id="close"><i class="far fa-times-circle close"></i></div>
+        <div id="close"><i class="far fa-times-circle close" id="close"></i></div>
 
         <div class="form-group">
           <label for="theme">Thème</label>
@@ -31,21 +31,21 @@
 
         <div class="form-group">
           <label>Avatar</label>
-          <input type="file" name="img" class="form-img">
+          <input type="file" name="img" class="form-img" id="img">
         </div>
 
         <div class="form-group">
-          <textarea type="text" name="theme" rows="15"></textarea>
+          <textarea type="text" name="theme" rows="15" id="texte"></textarea>
         </div>
 
         <div class="form-group">
-          <button type="submit" name="button" class="btn-form">Ajouter</button>
+          <button type="submit" name="button" class="btn-form" id="btn-add">Ajouter</button>
         </div>
 
       </form>
     </div>
 
-    <section>
+    <section id="section">
         <div class="block-list" id="count">
             <p>Message total : <strong id="cpteur"></strong></p>
         </div>

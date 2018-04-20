@@ -42,6 +42,10 @@ document.getElementById('close').addEventListener("click",
     e.preventDefault();
     pop.classList.remove('show');
     pop.classList.add('hide');
+
+    document.getElementById('theme').value = '';
+    document.getElementById('img').value = '';
+    document.getElementById('texte').value = '';
   }
 );
 

@@ -7,8 +7,11 @@ cpt.innerHTML = btn.length.toString();
 for(var i=0; i<btn.length; i++) {
   btn[i].addEventListener("click",
   function(){
-    this.parentNode.remove();
-    cpt.innerHTML = btn.length.toString();
+    let validation = confirm("Etes-vous sur de vouloir supprimer cet article");
+    if(validation) {
+      this.parentNode.remove();
+      cpt.innerHTML = btn.length.toString();
+    }
   });
 };
 /*
@@ -92,8 +95,11 @@ function createElementDom(el, elt, elmt) {
   div.appendChild(span);
   span.addEventListener('click',
     function() {
-      cpt.innerHTML = (btn.length - 1).toString();
-      this.parentNode.remove();
+      let validation = confirm("Etes-vous sur de vouloir supprimer cet article");
+      if(validation) {
+        cpt.innerHTML = (btn.length - 1).toString();
+        this.parentNode.remove();
+      }
     }
   );
 
